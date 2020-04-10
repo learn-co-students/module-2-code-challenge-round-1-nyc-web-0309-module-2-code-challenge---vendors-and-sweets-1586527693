@@ -94,20 +94,20 @@ The Sweet's show page should include:
 
 ### 5. Vendor Index page links
 
-On the Vendors index page, we should see a list of vendor's names. Each name should link to the Vendor's show page.
+<!-- On the Vendors index page, we should see a list of vendor's names. Each name should link to the Vendor's show page. -->
 
 ### 6. Sweets index page links
 
-On the Sweets index page, we should see a list of sweet's names. Each name should link to the Sweet's show page.
+<!-- On the Sweets index page, we should see a list of sweet's names. Each name should link to the Sweet's show page. -->
 
 ### 7. VendorSweet Validations
 
 Add validations to the VendorSweet model so that:
 
-- the price is not blank
-- the price is not a negative number
+<!-- - the price is not blank
+- the price is not a negative number -->
 
-Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages.
+<!-- Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages. -->
 
 ### 8. Advanced: VendorSweet Validation
 
