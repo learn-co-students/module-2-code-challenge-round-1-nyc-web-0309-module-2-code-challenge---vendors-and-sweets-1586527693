@@ -1,6 +1,6 @@
 <h1>Sweet</h1>
 
-<%= @sweet.name %>
+<h2><%= @sweet.name %></h2>
 
 <% @sweet.vendors.uniq.each do |vendor| %>
     <p><%= link_to vendor.name, vendor_path(vendor) %></p>
