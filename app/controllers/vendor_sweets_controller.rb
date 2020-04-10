@@ -4,7 +4,7 @@ class VendorSweetsController < ApplicationController
   end
   def create
     vs = VendorSweet.create(params.require(:vendor_sweet).permit(:vendor_id, :sweet_id, :price))
-    byebug
+    # byebug
     if !vs.valid?
       flash[:errors] = vs.errors.full_messages
       redirect_to new_vendor_sweet_path
