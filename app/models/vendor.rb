@@ -1,6 +1,7 @@
 class Vendor < ApplicationRecord
     has_many :vendor_sweets
     has_many :sweets, through: :vendor_sweets
+    
 
     def avg_price
         total_price = 0
