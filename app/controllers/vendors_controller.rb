@@ -1,5 +1,5 @@
 class VendorsController < ApplicationController
-  before_action :find_vendor, only: [:show, :edit]
+  before_action :find_vendor, only: [:show]
   def index
     @vendors = Vendor.all
   end

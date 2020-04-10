@@ -4,6 +4,7 @@
 
 
 <h2>Sweets We Sell</h2>
-<% @vendor.sweets.each do |sweet| %>
+<% #adding.uniq because seed data had dupes before I added validations to prevent duplicate pairs%>
+<% @vendor.sweets.uniq.each do |sweet| %>
 <%= link_to sweet.name, sweet %>
 <% end%>
