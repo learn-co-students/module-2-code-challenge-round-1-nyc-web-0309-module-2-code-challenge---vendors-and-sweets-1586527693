@@ -1,0 +1,11 @@
+<h1> <%= @sweet.name %>'s Page </h1>
+
+<h2> List of Vendors: <h2>
+
+<ul>
+<% @sweet.vendors.each do |vendor| %>
+<p><li><%= link_to vendor.name, vendor_path(vendor) %></li></p>
+</ul>
+<% end %>
+
+<%= button_to "Go to Sweets Index Page", sweets_path, method: :get %>
