@@ -1,0 +1,9 @@
+<h1> <%=@sweet.name %> </h1>
+
+<h3> Where you can find me:</h3>
+<ul>
+<% @sweet.vendors.each do |v| %>
+    <li>
+        <%= link_to v.name, v %>
+    </li>
+<% end %>
