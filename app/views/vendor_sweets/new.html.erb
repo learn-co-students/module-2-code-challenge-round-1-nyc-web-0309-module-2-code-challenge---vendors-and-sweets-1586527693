@@ -1,15 +1,18 @@
 <h1> Vendor Sweet form </h1>
-<%if flash[:errors]%>
-<% flash[:errors].each do |errors|%>
-    <%= errors %><br>
-    <%end%>
-    <%end%>
+<hr>
+
 <%=form_for(@vendor_sweet) do |f|%>
-    <%= f.label :price %><br>
-    <%=f.number_field :price %><br>
-    <%= f.label :vendor_id %><br>
+    
+    <strong><%= f.label :vendor_id %><br></strong>
     <%=f.collection_select :vendor_id, @vendors, :id, :name %><br>
-    <%= f.label :sweet_id %><br>
+   <strong> <%= f.label :sweet_id %><br></strong>
     <%=f.collection_select :sweet_id, @sweets, :id, :name %><br>
-    <%= f.submit %>
+    <strong><%= f.label :price %><br></strong>
+    <%=f.number_field :price %><br>
+    <%= f.submit %><br>
+    <%end%>
+    <%if flash[:errors]%>
+<% flash[:errors].each do |errors|%>
+     <%=  errors %> ! <br>
+    <%end%>
     <%end%>
