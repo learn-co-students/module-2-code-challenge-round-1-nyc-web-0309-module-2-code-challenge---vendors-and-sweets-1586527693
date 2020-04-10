@@ -5,6 +5,6 @@
 <h2>List of Sweets for Sale</h2>
 <ul>
   <% @vendor.sweets.each do |sweet| %>
-  <%= link_to sweet.name, sweet %><br>
+    <li><%= link_to sweet.name, sweet %></li>
   <% end %>
 </ul>
