@@ -17,4 +17,16 @@ class VendorSweet < ApplicationRecord
 
         nil
     end
+
+    def self.average_price_in_dollars
+        vs_list = VendorSweet.all
+
+        if vs_list.count > 0 then
+            vs_list.all.reduce(0) do |sum, vs|
+                sum += vs.price
+            end.to_f / vs_list.all.count / 100
+        else
+            0
+        end
+    end
 end
