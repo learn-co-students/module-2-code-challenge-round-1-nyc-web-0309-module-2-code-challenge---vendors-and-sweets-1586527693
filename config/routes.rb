@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # get '/vendors', to: "vendors#index", as: "vendors"
   resources :sweets, only: [:index, :show]
   resources :vendors, only: [:index, :show]
-  resources :vendor_sweets, only: [:new, :show, :index]
+  resources :vendor_sweets, only: [:new, :show, :index, :create]
 end
