@@ -3,5 +3,7 @@
 <ul>
   <% @vendors.each do |vendor| %>
     <li><%= vendor.name %></li>
+    <li><%= link_to :link, vendor_path(vendor) %>
   <% end  %>
+
 </ul>
