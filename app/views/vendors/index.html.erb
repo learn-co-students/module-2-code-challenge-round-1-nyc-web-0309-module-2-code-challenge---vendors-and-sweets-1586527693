@@ -1,5 +1,15 @@
 <h1>All Vendors</h1>
 
+<%# Advanced - Deliverable #9 %>
+<h3>The Average Price for All Sweets</h3>
+  <% @total = 0 %>
+  <% @vendorsweets.each do |obj|%>
+    <% @total += obj.price %>
+  <% end %>
+  <% avg = @total/@vendorsweets.count%>
+  <h5> -- <%= avg %> -- </h5>
+
+
 <ul>
   <% @vendors.each do |vendor| %>
     <li><%= link_to  vendor.name, vendor_path(vendor) %></li>
