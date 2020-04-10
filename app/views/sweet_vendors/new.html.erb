@@ -1,0 +1,19 @@
+<%if flash[:error]%>
+
+<h1> There were some errors creating this association</h1>
+ <ol>
+    <%flash[:error].each do |error|%>
+    <li><%=error%></li>
+<%end%>
+  </ol>
+<%end%>
+
+<%=form_for(@sweet_vendor) do |t|%>
+<%=t.label :vendor_id%>
+<%= t.collection_select(:vendor_id, Vendor.all,:id, :name)%>
+<%=t.label :sweet_id%>
+<%= t.collection_select(:sweet_id, Sweet.all,:id, :name)%>
+<%=t.label :price%>
+<%=t.number_field :price%>
+<%=t.submit%>
+<%end%>

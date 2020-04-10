@@ -19,3 +19,7 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+10.times do 
+SweetVendor.create(sweet_id: Sweet.all.sample.id, vendor_id: Vendor.all.sample.id, price: 5)
+end
