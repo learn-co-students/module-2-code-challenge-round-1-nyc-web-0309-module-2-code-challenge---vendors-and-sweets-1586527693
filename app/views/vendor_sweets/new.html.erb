@@ -1,0 +1,13 @@
+<h1>Working</h1>
+<%= form_for @vendor_sweet do |vs|%>
+    <%= vs.label Vendor%>
+    <%= vs.collection_select :vendor_id, Vendor.all, :id, :name%>
+
+    <%= vs.label Sweet%>
+    <%= vs.collection_select :sweet_id, Sweet.all, :id, :name%>
+
+    <%= vs.label :price%>
+    <%= vs.number_field :price%>
+
+    <%= vs.submit%>
+<% end %> 

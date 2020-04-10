@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/sweets', to: "sweets#index", as: "sweets"
-  get '/vendors', to: "vendors#index", as: "vendors"
-
+  # get '/sweets', to: "sweets#index", as: "sweets"
+  # get '/vendors', to: "vendors#index", as: "vendors"
+# CHANGED TO MAKE LIFE A LITTLE EASIER 
+  resources :sweets
+  resources :vendors
+  resources :vendor_sweets
 end
