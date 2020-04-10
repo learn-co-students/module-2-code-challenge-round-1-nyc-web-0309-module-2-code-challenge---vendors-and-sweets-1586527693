@@ -1,8 +1,8 @@
 <h1><%= @sweet.name %>'s Page</h1>
-
+<hr>
 <ul>
 <% @sweet.vendors.each do |vendor| %>
-  <li>  <%= link_to vendor.name, vendor %> </li>
+  <p>  <%= link_to vendor.name, vendor %> </p><hr>
 <% end %>
 </ul>
 

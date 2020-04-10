@@ -1,7 +1,7 @@
 <h1>All Sweets</h1>
-
+<hr>
 <ul>
   <% @sweets.each do |sweet| %>
-    <li><%= link_to sweet.name, sweet %></li>
+    <p><%= link_to sweet.name, sweet %> | average price: <%= sweet.avg_price %> cents</p><hr>
   <% end  %>
 </ul>
