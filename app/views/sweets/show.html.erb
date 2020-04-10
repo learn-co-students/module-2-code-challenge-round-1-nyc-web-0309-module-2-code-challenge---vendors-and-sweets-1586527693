@@ -3,7 +3,7 @@
 <p><b>NAME:</b><%= @sweet.name %></p>
 
 
-<h2>Sweets We Sell</h2>
-<% @vendor.sweets.each do |sweet| %>
-<%= link_to sweet.name, sweets_path(sweet) %>
+<h2>Vendors that stock me</h2>
+<% @sweet.vendors.each do |vendor| %>
+<%= link_to vendor.name, vendor %>
 <% end%>
