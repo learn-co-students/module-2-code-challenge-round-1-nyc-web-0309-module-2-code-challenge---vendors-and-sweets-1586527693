@@ -4,5 +4,7 @@ class VendorSweet < ApplicationRecord
 
     validates :price, presence: true 
     validates :price, numericality: {greater_than: 0}
+
+    
      
 end
