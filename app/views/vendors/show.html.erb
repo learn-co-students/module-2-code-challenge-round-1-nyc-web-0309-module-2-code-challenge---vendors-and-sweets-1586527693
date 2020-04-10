@@ -1,0 +1,12 @@
+<h4>Vendor info</h4>
+
+<p><strong>Name: </strong><%= @vendor.name %></p>
+
+<% if !@vendor.vendor_sweets.empty? %>
+    <p><strong>Sweets I sell: </strong></p>
+    <ul>
+        <% @vendor.vendor_sweets.each do |vw| %>
+            <li><%= link_to vw.sweet.name, sweet_path(vw.sweet) %></li>
+        <% end %>
+    </ul>
+<% end %>
