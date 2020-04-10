@@ -6,7 +6,6 @@
 <p>Sweets List:<p><br>
 <% @sweet.vendors.each do |vendor_stweet| %>
     <li><%= vendor_stweet.name %></li>
-  <%= link_to :link, vendor_path("#{vendor_sweet.name}") %>   
 <% end %>
 
 </ul>
