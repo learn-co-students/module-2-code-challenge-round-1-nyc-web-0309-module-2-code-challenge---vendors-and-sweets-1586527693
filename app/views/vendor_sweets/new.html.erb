@@ -2,7 +2,9 @@
 
 <% if flash[:errors] %>
     <% flash[:errors].each do |e| %>
-        <%= e %><br>
+        <font color="red">
+        <%= e %>!
+        </font><br>
     <% end %>
 <% end %>
 

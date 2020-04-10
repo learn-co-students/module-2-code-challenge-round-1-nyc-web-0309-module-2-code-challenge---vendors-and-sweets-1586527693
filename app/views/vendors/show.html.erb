@@ -1,11 +1,22 @@
+<%= link_to "<Back to all Vendors", vendors_path%>
 <h1> <%= @vendor.name %> </h1>
 
+<% if @vendor.sweets.count > 0 %>
 <h3> Our Sweets:</h3>
-<ul>
-<% @vendor.sweets.each do |s| %>
-    <li>
-        <%= link_to s.name, s %>
-    </li>
-<% end %>
+        Average Price: <%=@vendor.avg_price%> cents
 
-</ul>
+        <ul>
+        <% @vendor.sweets.each do |s| %>
+            <li>
+                <%= link_to s.name, s %>
+                - Typically priced at:
+                <%= s.avg_price%>
+            </li>
+        <% end %>
+
+        </ul>
+<% else %>
+
+Sorry! We do not have any sweets in stock at this time! 
+
+<% end %>
