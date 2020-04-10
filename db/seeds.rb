@@ -19,3 +19,4 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
