@@ -107,13 +107,13 @@ Add validations to the VendorSweet model so that:
 <!-- - the price is not blank
 - the price is not a negative number -->
 
-<!-- Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages. -->
+<!-- <% Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages. %> -->
 
 ### 8. Advanced: VendorSweet Validation
 
-There should only be one `VendorSweet` for any pair of `Vendor` and `Sweet`.
+<!-- There should only be one `VendorSweet` for any pair of `Vendor` and `Sweet`.
 
-Add a validation to ensure that there is only one VendorSweet for a Vendor and Sweet pair. Update your error handling so that this new validation is also displayed to the user.
+Add a validation to ensure that there is only one VendorSweet for a Vendor and Sweet pair. Update your error handling so that this new validation is also displayed to the user. -->
 
 ### 9. Advanced: Vendor Average Price
 
