@@ -21,5 +21,6 @@ sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
 
-5.times do 
-  VendorSweet.create(vendor: Vendor.all.sample, sweet: Sweet.all.sample, price: )
+10.times do 
+  VendorSweet.create(vendor: Vendor.all.sample, sweet: Sweet.all.sample, price: rand(1..20))
+end

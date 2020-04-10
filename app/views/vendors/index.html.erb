@@ -1,8 +1,11 @@
 <h1>All Vendors</h1>
-
+<h3> Average price for all sweets: </h3>
+<% @sweets.each do |sweet| %>
+<%= sweet.name %> costs: <%= number_to_currency(sweet.avg_price_by_each_sweet)%> <br>
+<% end  %>
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= link_to vendor.name, vendor_path(vendor.id) %></li>
+    <li><%= link_to vendor.name, vendor_path(vendor.id) %> Average price: <%= number_to_currency(vendor.avg_price_by_vendor) %></li>
   <% end  %>
 </ul>
 
