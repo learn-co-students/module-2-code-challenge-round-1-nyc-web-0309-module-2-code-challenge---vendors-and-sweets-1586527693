@@ -1,7 +1,8 @@
 <h1>All Vendors</h1>
+<p><strong>Average price for all Sweets </strong><%= Vendor.total_avg %></p>
 
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= link_to vendor.name, vendor_path(vendor) %></li>
+    <li><%= link_to vendor.name, vendor_path(vendor) %>: <%= vendor.avg_price %></li>
   <% end  %>
 </ul>
