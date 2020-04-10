@@ -8,7 +8,7 @@
 
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= link_to vendor.name, vendor %> - <%= "#{vendor.average_price.to_i} cents" if vendor.sweets.length > 1 %></li>
+    <li><%= link_to vendor.name, vendor %> - <%= vendor.sweets.length > 1 ? "#{vendor.average_price.to_i} cents" : "Vendor does not sell any sweets yet" %></li>
   <% end  %>
 </ul>
 
