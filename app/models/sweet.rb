@@ -11,11 +11,11 @@ class Sweet < ApplicationRecord
         (sum.to_f / self.vendor_sweets.count.to_f).round(2)
     end
 
-    def self.avg_price_all
-        total = 0
-        self.all.each do |sweet|
-            total += sweet.avg_price_by_each_sweet
-        end
-        (total.to_f / self.all.count.to_f).round(2)
-    end
+    # def self.avg_price_all
+    #     total = 0
+    #     self.all.each do |sweet|
+    #         total += sweet.avg_price_by_each_sweet
+    #     end
+    #     (total.to_f / self.all.count.to_f).round(2)
+    # end
 end
