@@ -2,9 +2,9 @@
 
 <h2>Sweets: </h2>
 <ul>
-<% @vendor.sweets.each do |sweet| %>
+<% @vendor.vendor_sweets.each do |vs| %>
   <li>
-    <%= link_to sweet.name, sweet_path(sweet) %>
+    <%= link_to vs.sweet.name, sweet_path(vs.sweet) %>: <%= vs.price %>¢
   </li>
 <% end %>
 </ul>
