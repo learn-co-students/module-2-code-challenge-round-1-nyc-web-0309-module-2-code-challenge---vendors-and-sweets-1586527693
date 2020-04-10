@@ -7,6 +7,13 @@ class VendorSweet < ApplicationRecord
   validates :price, numericality: {greater_than_or_equal_to: 0}
   validate :no_duplicates
 
+  def self.average_price
+    if self.all.count == 0
+      return 0
+    end
+    (self.all.sum {|vs| vs.price } / self.all.count).to_i
+  end
+
   private
 
   def no_duplicates
