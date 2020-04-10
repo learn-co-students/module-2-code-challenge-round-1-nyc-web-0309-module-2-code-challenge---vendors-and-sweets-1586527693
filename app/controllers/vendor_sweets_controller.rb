@@ -1,8 +1,3 @@
-
-# I clearly need to review how to get the naming correct for models with
-# CamelCase names...
-# I guess I should have just used a generator for this one...
-
 class VendorSweetsController < ApplicationController
 
     def new
