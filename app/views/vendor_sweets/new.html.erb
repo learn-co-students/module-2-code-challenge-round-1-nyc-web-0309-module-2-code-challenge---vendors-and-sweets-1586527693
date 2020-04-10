@@ -10,6 +10,6 @@
 <%= form_for @vendor_sweet do |f| %>
   Select Vendor: <%= f.collection_select :vendor_id, Vendor.all, :id, :name, prompt: true%><br><br>
   Select Sweet: <%= f.collection_select :sweet_id, Sweet.all, :id, :name, prompt: true%><br><br>
-  Price: <%= f.number_field :price %><br><br>
+  Price in cents: <%= f.number_field :price %><br><br>
   <%= f.submit %>
 <% end %>
