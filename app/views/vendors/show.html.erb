@@ -1,0 +1,18 @@
+<h1><%= @vendor.name %></h1>
+
+Sweets Sold by this Vendor:
+<% if @vendor.sweets.count > 0 %>
+
+    <ul>
+        <% @vendor.sweets.each do |sweet| %>
+            <li>
+                <%= link_to sweet.name, sweet_path(sweet) %>
+            </li>
+        <% end %>
+    </ul>
+
+<% else %>
+
+    None Yet!
+
+<% end %>

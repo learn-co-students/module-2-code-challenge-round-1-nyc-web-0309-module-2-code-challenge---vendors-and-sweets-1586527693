@@ -1,0 +1,25 @@
+<h1>Create New Association!</h1>
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <p>
+            <%= error %>
+        </p>
+    <% end %>
+<% end %>
+
+<%= form_for @vs do |fb| %>
+    <p>
+        <%= fb.label :vendor_id %>
+        <%= fb.collection_select :vendor_id, Vendor.all, :id, :name %>
+    </p>
+    <p>
+        <%= fb.label :sweet_id %>
+        <%= fb.collection_select :sweet_id, Sweet.all, :id, :name %>
+    </p>
+    <p>
+        <%= fb.label :price %>
+        <%= fb.number_field :price %>
+    </p>
+    <%= fb.submit %>
+<% end %>
