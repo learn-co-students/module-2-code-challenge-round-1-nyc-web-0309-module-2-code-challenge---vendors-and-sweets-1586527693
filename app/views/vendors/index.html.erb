@@ -1,14 +1,14 @@
 <h1>All Vendors</h1>
 
 <p>
-  Average Price of Sweets: $<%= VendorSweet.average_price_in_dollars.round(2) %>
+  Average Price of Sweets: $<%=  '%.2f' % VendorSweet.average_price_in_dollars %>
 </p>
 
 <ul>
   <% @vendors.each do |vendor| %>
     <li>
       <%= link_to vendor.name, vendor_path(vendor) %>
-      Average Vendor Price: $<%= vendor.average_sweet_price_in_dollars.round(2) %> 
+      Average Vendor Price: $<%=  '%.2f' % vendor.average_sweet_price_in_dollars %> 
     </li>
   <% end  %>
 </ul>

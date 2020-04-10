@@ -3,7 +3,7 @@
 # CamelCase names...
 # I guess I should have just used a generator for this one...
 
-class VendorsweetsController < ApplicationController
+class VendorSweetsController < ApplicationController
 
     def new
         if flash[:errors] then
@@ -21,7 +21,7 @@ class VendorsweetsController < ApplicationController
         else
             flash[:errors] = @vs.errors.full_messages
             flash[:new_params] = vs_params 
-            redirect_to new_vendorsweet_path
+            redirect_to new_vendor_sweet_path
         end
     end
 
