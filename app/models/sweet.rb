@@ -1,12 +1,7 @@
 class Sweet < ApplicationRecord
 has_many :sweet_vendors
 has_many :vendors, through: :sweet_vendors
-def self.avg_price
-    list= Sweet.total_price_list
-    sum= list.sum
-    count= list.count
-    sum/count
-end
+
 
 def self.total_price_list
     Sweet.all.map do |sweet|
@@ -21,13 +16,13 @@ count=0
         count+=1
         total+=p.price
     end
-    
     if count>0
     total/count
     else
     return nil
 end
 end
+
 def self.true_avg
     total=0
     nil_count=0
