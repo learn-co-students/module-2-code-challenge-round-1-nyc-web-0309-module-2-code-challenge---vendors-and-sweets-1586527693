@@ -18,6 +18,6 @@ class VendorsweetsController < ApplicationController
     private
 
     def vs_params
-        params.require(:vendorSweet).permit(:vendor_id, :sweet_id, :price)
+        params.require(:vendor_sweet).permit(:vendor_id, :sweet_id, :price)
     end
 end

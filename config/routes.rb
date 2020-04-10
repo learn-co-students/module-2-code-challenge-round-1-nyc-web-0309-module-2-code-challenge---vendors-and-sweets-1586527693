@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 
   # get "/vendorsweets", to: "vendorSweets#index", as: "vendorsweets"
   get "/vendorsweets/new", to: "vendorsweets#new", as: "new_vendorsweets"
-  post "/vendorsweets", to: "vendorsweets#create", as: "vendorsweets"
+  post "/vendorsweets", to: "vendorsweets#create", as: "vendor_sweets"
 end

@@ -3,6 +3,7 @@ class VendorSweet < ApplicationRecord
     belongs_to :sweet
 
     validates :price, presence: true
+    validates :price, numericality: { greater_than: 0 }
     validate :has_unique_vendor_and_sweet_combo
 
     def has_unique_vendor_and_sweet_combo
@@ -11,7 +12,7 @@ class VendorSweet < ApplicationRecord
         end
 
         if matching_sweet then
-            errors.add(:sweet, 'This combination of Vendor and Sweet already exists')
+            errors.add(:Join, ': This combination of Vendor and Sweet already exists')
         end
 
         nil
