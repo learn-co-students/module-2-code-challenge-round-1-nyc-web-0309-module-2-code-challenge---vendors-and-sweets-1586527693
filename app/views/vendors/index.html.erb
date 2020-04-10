@@ -9,7 +9,7 @@
   <% avg = @total/@vendorsweets.count%>
   <h5> -- <%= avg %> -- </h5>
 
-
+<%# list of vendors with links to their show pages %>
 <ul>
   <% @vendors.each do |vendor| %>
     <li><%= link_to  vendor.name, vendor_path(vendor) %> Avg. Price <%= vendor.vendor_avg_price %></li> 
