@@ -3,7 +3,7 @@
 <%= @vendor.name %>
 <br>
 <label> Sweets They Sell: </label> 
-<% @vendor.sweets.each do |sweet|%>
+<% @vendor.sweets.uniq.each do |sweet|%>
 <%= link_to sweet.name, sweet_path(sweet) %>
 <% end %>
 

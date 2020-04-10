@@ -102,12 +102,12 @@ In the rails console, check that your code works by creating your first `VendorS
 
 ### 7. VendorSweet Validations
 
-Add validations to the VendorSweet model so that:
+<!-- Add validations to the VendorSweet model so that:
 
 - the price is not blank
 - the price is not a negative number
 
-Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages.
+Add error handling to the `VendorSweet` create action. If the VendorSweet is *not* valid, the form should show the validation error messages. -->
 
 ### 8. Advanced: VendorSweet Validation
 

@@ -1,3 +1,9 @@
+<% if flash[:errors] %>
+<% flash[:errors].each do |errors| %>
+<%= errors %><br>
+<% end %>
+<% end %>
+
 <h3> VendorSweet Create Form </h3>
 
 <%= form_for @vendorsweet do |f| %>

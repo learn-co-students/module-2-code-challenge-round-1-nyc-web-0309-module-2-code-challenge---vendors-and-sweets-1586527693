@@ -8,8 +8,13 @@ class VendorsweetsController < ApplicationController
 
   def create
      @vendorsweet = Vendorsweet.create(vendorsweet_params)
+     if @vendorsweet.valid?
      redirect_to vendor_path(@vendorsweet.vendor_id)
+     else 
+      flash[:errors] = @vendorsweet.errors.full_messages
+      redirect_to new_vendorsweet_path
   end  
+end 
 
 
 
