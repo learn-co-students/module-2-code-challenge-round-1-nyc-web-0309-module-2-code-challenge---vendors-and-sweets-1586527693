@@ -35,19 +35,19 @@ Once you have followed the setup instructions above, visiting the `/vendors` rou
 
 Sweet
 
-| Column | Type |
-| ------------- | ------------- |
-| name | String |
+| Column     | Type     |
+| ---------- | -------- |
+| name       | String   |
 | created_at | DateTime |
-| updated_at  | DateTime  |
+| updated_at | DateTime |
 
 Vendor
 
-| Column | Type |
-| ------------- | ------------- |
-| name  | String  |
-| created_at  | DateTime  |
-| updated_at  | DateTime  |
+| Column     | Type     |
+| ---------- | -------- |
+| name       | String   |
+| created_at | DateTime |
+| updated_at | DateTime |
 
 ## Instructions
 
