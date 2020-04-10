@@ -7,4 +7,6 @@ class VendorSweet < ApplicationRecord
 
     # Advanced
     validates_uniqueness_of :vendor_id, :scope => [:sweet_id], :message => "already sells that sweet!"
+
+   
 end

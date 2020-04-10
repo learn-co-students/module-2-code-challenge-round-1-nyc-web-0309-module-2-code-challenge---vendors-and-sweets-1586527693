@@ -117,10 +117,10 @@ Add a validation to ensure that there is only one VendorSweet for a Vendor and S
 
 ### 9. Advanced: Vendor Average Price
 
-On the Vendor index page, show:
+<!-- On the Vendor index page, show:
 
 <!-- - the average price for all Sweets at the top of the page -->
-- the average price for each Vendor next to the Vendor's name
+<!-- - the average price for each Vendor next to the Vendor's name --> -->
 
 ### Features Demo
 
