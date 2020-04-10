@@ -1,0 +1,11 @@
+<h1><%= @vendor.name %>'s Page</h1>
+
+<ul>
+<% @vendor.sweets.each do |sweet| %>
+  <li><%= link_to sweet.name, sweet %></li>
+<% end %>
+</ul>
+
+<%# the Vendor's name (ie. Insomnia Cookies)
+# a list of the Sweets that they sell
+# each Sweet in the list should link to that Sweet's show page %>
