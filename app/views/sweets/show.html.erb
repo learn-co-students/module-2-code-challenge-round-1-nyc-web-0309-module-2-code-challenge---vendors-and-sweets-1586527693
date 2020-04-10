@@ -1,0 +1,10 @@
+<h1><%= @sweet.name %></h1>
+<ol>
+<% @sweet.vendors.each do |vendor| %>
+<li> <%= link_to vendor.name, vendor_path %> </li>
+<% end  %>
+</ol>
+<br><br>
+<%= button_to "Sweets Index", sweets_path, method: :get %>
+<%= button_to "Vendors Index", vendors_path, method: :get %>
+<%= button_to "Create new VendorSweet", new_vendor_sweet_path, method: :get %>
