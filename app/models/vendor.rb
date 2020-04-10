@@ -13,4 +13,6 @@ class Vendor < ApplicationRecord
         average = total/count
     end
 
+    
+
 end

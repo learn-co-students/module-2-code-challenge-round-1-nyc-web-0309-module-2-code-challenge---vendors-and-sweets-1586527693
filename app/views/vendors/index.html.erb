@@ -2,7 +2,10 @@
 
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= link_to vendor.name, vendor %></li>
+    <li><%= link_to vendor.name, vendor %>
+    -
+    Avg Price: <%= vendor.avg_price %> cents
+    </li>
   <% end  %>
 </ul>
 
